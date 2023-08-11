@@ -10,19 +10,23 @@ export default function Index() {
         gap: 24,
         padding: '0px 8px',
       }}
+      data-path='0cd/add/597:rrr'
     >
       <span
         style={{
           fontSize: '40px',
           fontWeight: 700,
           fontStyle: 'normal',
+          color: 'rgb(0, 0, 0, 1)',
         }}
+        data-path='0cd/add/597:rrr/ttt'
+        data-uid='ttt'
       >
         Beaches
       </span>
       <div
         style={{
-          backgroundColor: '#0B7FEB',
+          backgroundColor: '#e6e6e6',
           width: '100%',
           height: 79,
           display: 'flex',
@@ -31,6 +35,7 @@ export default function Index() {
           justifyContent: 'center',
           borderRadius: 26,
         }}
+        data-path='0cd/add/597:rrr/419'
         data-uid='419'
       >
         <Link
@@ -44,6 +49,7 @@ export default function Index() {
             fontWeight: 700,
           }}
           to='/posts'
+          data-path='0cd/aad/597:rrr/419/ooo'
         >
           Check avaliable beaches
         </Link>

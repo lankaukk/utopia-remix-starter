@@ -2,7 +2,12 @@ import React from 'react'
 import { useParams } from '@remix-run/react'
 import { json, useLoaderData } from 'react-router'
 
-export function loader({ params }) {
+async function wait(ms) {
+  return new Promise((res) => setTimeout(res, ms))
+}
+
+export async function loader({ params }) {
+  await wait(1000)
   if (params.postId === '1') {
     return json({
       name: 'La Digue',
