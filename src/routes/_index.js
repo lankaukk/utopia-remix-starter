@@ -49,7 +49,6 @@ export default function Index() {
             fontWeight: 700,
           }}
           to='/posts'
-          data-path='0cd/aad/597:rrr/419/ooo'
         >
           Check avaliable beaches
         </Link>
