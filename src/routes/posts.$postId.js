@@ -7,7 +7,7 @@ async function wait(ms) {
 }
 
 export async function loader({ params }) {
-  await wait(1000)
+  // await wait(1000)
   if (params.postId === '1') {
     return json({
       name: 'La Digue',
