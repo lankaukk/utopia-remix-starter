@@ -35,21 +35,28 @@ export default function PostForId() {
   return (
     <div
       style={{
-        width: 'max-content',
+        width: '100%',
         height: '100%',
-        borderRadius: 20,
         display: 'flex',
         flexDirection: 'column',
         gap: 21,
         backgroundColor: 'white',
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+        paddingTop: 10,
+        paddingRight: 10,
+        paddingBottom: 10,
+        paddingLeft: 10,
+        overflowY: 'scroll',
       }}
       data-uid='a8e'
     >
       <img
         style={{
           backgroundColor: '#aaaaaa33',
-          width: 253,
+          width: '100%',
           height: 246.5,
+          objectFit: 'cover',
           contain: 'layout',
           borderRadius: 20,
         }}
@@ -58,28 +65,28 @@ export default function PostForId() {
       />
       <div
         style={{
-          width: 252,
-          height: 19,
           contain: 'layout',
+          width: '100%',
+          height: 'max-content',
         }}
         data-uid='3d0'
       >
         <span
           style={{
             wordBreak: 'break-word',
-            width: '100%',
+            width: 99,
             contain: 'layout',
             fontSize: '26px',
-            height: 'max-content',
+            height: 30.5,
           }}
-          data-uid='273'
+          data-uid='4c5'
         >
           {name}
         </span>
       </div>
       <div
         style={{
-          width: 252,
+          width: '100%',
           height: 19,
           contain: 'layout',
         }}

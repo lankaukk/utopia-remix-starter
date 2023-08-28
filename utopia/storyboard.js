@@ -10,7 +10,7 @@ import Index from '/src/routes/_index'
 import { Group } from 'utopia-api'
 
 export var storyboard = (
-  <Storyboard>
+  <Storyboard data-uid='0cd'>
     <Scene
       style={{
         width: 386,
@@ -20,8 +20,12 @@ export var storyboard = (
         top: 334,
       }}
       data-label='Remix App'
+      data-uid='2ad'
     >
-      <RemixContainer />
+      <RemixContainer
+        data-uid='597'
+        style={{ height: '100%' }}
+      />
     </Scene>
     <div
       style={{
@@ -31,6 +35,7 @@ export var storyboard = (
         width: 288,
         height: 150,
       }}
+      data-uid='cc0'
     />
   </Storyboard>
 )

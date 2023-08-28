@@ -9,8 +9,10 @@ export default function Index() {
         flexDirection: 'column',
         gap: 24,
         padding: '0px 8px',
+        height: '100%',
       }}
       data-path='0cd/add/597:rrr'
+      data-uid='f95'
     >
       <span
         style={{
@@ -49,6 +51,7 @@ export default function Index() {
             fontWeight: 700,
           }}
           to='/posts'
+          data-uid='af0'
         >
           Check avaliable beaches
         </Link>
