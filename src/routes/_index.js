@@ -1,19 +1,6 @@
 import React from 'react'
 import { Link } from '@remix-run/react'
 
-const Title = ({ text }) => (
-  <span
-    style={{
-      fontSize: '40px',
-      fontWeight: 700,
-      fontStyle: 'normal',
-      color: 'rgb(0, 0, 0, 1)',
-    }}
-  >
-    Beaches
-  </span>
-)
-
 export default function Index() {
   return (
     <div
@@ -22,10 +9,21 @@ export default function Index() {
         flexDirection: 'column',
         gap: 24,
         padding: '0px 8px',
-        height: '100%',
       }}
-      data-uid='f95'
+      data-path='0cd/add/597:rrr'
     >
+      <span
+        style={{
+          fontSize: '40px',
+          fontWeight: 700,
+          fontStyle: 'normal',
+          color: 'rgb(0, 0, 0, 1)',
+        }}
+        data-path='0cd/add/597:rrr/ttt'
+        data-uid='ttt'
+      >
+        Beaches
+      </span>
       <div
         style={{
           backgroundColor: '#e6e6e6',
@@ -37,6 +35,7 @@ export default function Index() {
           justifyContent: 'center',
           borderRadius: 26,
         }}
+        data-path='0cd/add/597:rrr/419'
         data-uid='419'
       >
         <Link
@@ -50,12 +49,10 @@ export default function Index() {
             fontWeight: 700,
           }}
           to='/posts'
-          data-uid='af0'
         >
           Check avaliable beaches
         </Link>
       </div>
-      <Title text='Beaches' />
     </div>
   )
 }
