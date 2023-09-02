@@ -2,7 +2,7 @@ import * as React from 'react'
 import {
   Scene,
   Storyboard,
-  RemixContainer,
+  RemixScene,
 } from 'utopia-api'
 import { App } from '/src/app.js'
 import { Playground } from '/src/playground.js'
@@ -22,7 +22,7 @@ export var storyboard = (
       data-label='Remix App'
       data-uid='2ad'
     >
-      <RemixContainer
+      <RemixScene
         data-uid='597'
         style={{ height: '100%' }}
       />
