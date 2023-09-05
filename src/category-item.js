@@ -23,6 +23,8 @@ export var CategoryItem = (props) => {
         textAlign: 'center',
         boxShadow: '0px 6px 1px rgba(0, 0, 0, 0.25)',
         border: '4px solid var(--yellow)',
+        padding: '13px 27px',
+        borderRadius: 50,
         backgroundColor: selected
           ? 'var(--off-white)'
           : 'var(--yellow)',

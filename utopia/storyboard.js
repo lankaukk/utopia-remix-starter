@@ -12,7 +12,7 @@ export var storyboard = (
       style={{
         position: 'absolute',
         width: 834,
-        height: 1656,
+        height: 1328,
         left: 4,
         top: -22,
         overflow: 'hidden',

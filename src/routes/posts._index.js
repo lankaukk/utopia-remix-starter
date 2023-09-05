@@ -152,15 +152,6 @@ export default function Posts() {
                   </div>
                 </div>
               </div>
-              {/* <Card
-                id={id}
-                name={name}
-                imageUrl={imageUrl}
-                rating={rating}
-                date={date}
-                description={description}
-                categories={categories}
-              /> */}
             </Link>
           </div>
         ),

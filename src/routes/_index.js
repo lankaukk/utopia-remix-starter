@@ -67,6 +67,7 @@ export default function Index() {
     <div
       style={{
         width: '100%',
+        height: '100%',
         background: 'var(--off-white)',
         zIndex: '100',
         display: 'flex',
@@ -78,7 +79,6 @@ export default function Index() {
       }}
     >
       <Title />
-      {/* <CategoryFilters /> */}
       <div
         style={{
           background: '#dd4a76',
@@ -106,7 +106,7 @@ export default function Index() {
           }}
           to='/posts'
         >
-          See The Things I've Done
+          Things I want to do
         </Link>
       </div>
     </div>

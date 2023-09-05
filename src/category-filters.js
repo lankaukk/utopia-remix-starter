@@ -33,10 +33,7 @@ export var CategoryFilters = (props) => {
         <CategoryItem
           selected={false}
           name={category}
-          style={{
-            padding: '13px 27px',
-            borderRadius: 50,
-          }}
+          style={{}}
         />
       ))}
     </div>

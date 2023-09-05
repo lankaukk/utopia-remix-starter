@@ -10,21 +10,6 @@ export default function App() {
         contain: 'layout',
       }}
     >
-      {/* <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'flex-end',
-          fontSize: '8px',
-          fontWeight: 700,
-          paddingTop: 0,
-          paddingRight: 0,
-          paddingBottom: 0,
-          paddingLeft: 0,
-        }}
-      >
-        Root.js
-      </div> */}
       <Outlet />
     </div>
   )
