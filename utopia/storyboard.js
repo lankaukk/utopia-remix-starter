@@ -12,8 +12,8 @@ export var storyboard = (
         width: 386,
         height: 543,
         position: 'absolute',
-        left: 987,
-        top: 292,
+        left: 469,
+        top: 1,
       }}
     />
     <div
