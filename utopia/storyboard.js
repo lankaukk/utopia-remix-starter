@@ -18,20 +18,22 @@ export var storyboard = (
         background: 'lime',
       }}
     />
-    <Scene
-      style={{
-        width: 386,
-        height: 543,
-        position: 'absolute',
-        left: 967,
-        top: 3,
-        background: 'lime',
-      }}
-    />
-    <Scene
+    <RemixScene
       style={{
         position: 'absolute',
         left: -1288,
+        top: 4,
+        width: 1600,
+        height: 1656,
+      }}
+      data-label='Mood Board'
+    >
+      <MoodBoard />
+    </RemixScene>
+    <Scene
+      style={{
+        position: 'absolute',
+        left: -3004,
         top: 4,
         width: 1600,
         height: 1656,
