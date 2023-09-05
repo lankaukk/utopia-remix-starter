@@ -20,7 +20,11 @@
     --safety: 'sans-serif';
 }
 
-.main-header {
+#my-thing {
+    view-transition-name: main-header;
+}
+
+.my-class {
     view-transition-name: main-header;
     contain: layout;
   }

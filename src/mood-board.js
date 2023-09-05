@@ -28,28 +28,19 @@ export var MoodBoard = () => {
       <Title
         style={{
           position: 'absolute',
-          left: 748,
-          top: 196,
+          left: 376,
+          top: 81,
           width: 956,
           height: 180,
           zIndex: 100,
-        }}
-      />
-      <CategoryFilters
-        style={{
-          position: 'absolute',
-          top: 62,
-          left: 34,
-          width: 1540,
-          height: 172,
         }}
       />
       <Card
         activity={activities[2]}
         style={{
           position: 'absolute',
-          top: 1208,
-          left: 1108,
+          top: 1268,
+          left: 961,
         }}
       />
       <Checkerboard
@@ -87,8 +78,8 @@ export var MoodBoard = () => {
         imageUrl={activities[2].imageUrl}
         style={{
           position: 'absolute',
-          left: 974,
-          top: 539.5,
+          left: 647,
+          top: 521.5,
         }}
       />
       <DecorativeLines
@@ -97,8 +88,8 @@ export var MoodBoard = () => {
           zIndex: 100,
           contain: 'layout',
           height: 64,
-          left: 2075,
-          top: 910,
+          left: 1439,
+          top: 940,
           position: 'absolute',
           transform: 'rotate(90deg)',
         }}
@@ -167,15 +158,15 @@ export var MoodBoard = () => {
           position: 'absolute',
           width: 540,
           height: 540,
-          top: 195,
-          left: 1941,
+          top: 169,
+          left: 1705,
         }}
       />
       <Mixologist
         style={{
           position: 'absolute',
-          left: 2158,
-          top: 1107,
+          left: 1654,
+          top: 1101,
           width: 100,
           height: 100,
         }}
@@ -183,8 +174,8 @@ export var MoodBoard = () => {
       <Cryophile
         style={{
           position: 'absolute',
-          left: 2058,
-          top: 942,
+          left: 1574,
+          top: 972,
           width: 100,
           height: 100,
         }}
@@ -192,7 +183,7 @@ export var MoodBoard = () => {
       <Wonderer
         style={{
           position: 'absolute',
-          left: 2206,
+          left: 1704,
           top: 872,
           width: 100,
           height: 100,
@@ -205,13 +196,22 @@ export var MoodBoard = () => {
           fontSize: '44px',
           height: 42,
           color: 'var(--yellow)',
-          left: 701,
-          top: 379,
+          left: 753,
+          top: 285,
           width: 872,
         }}
       >
         {activities[2].name}
       </span>
+      <CategoryFilters
+        style={{
+          position: 'absolute',
+          top: 330,
+          left: 84,
+          width: 1540,
+          height: 172,
+        }}
+      />
     </div>
   )
 }

@@ -9,6 +9,7 @@ import { MoodBoard } from '/src/mood-board.js'
 export var storyboard = (
   <Storyboard>
     <RemixScene
+      className='my-class'
       style={{
         position: 'absolute',
         width: 834,
@@ -18,16 +19,14 @@ export var storyboard = (
         overflow: 'hidden',
       }}
       data-label='Mood Board'
-    >
-      <MoodBoard />
-    </RemixScene>
+    ></RemixScene>
     <Scene
       style={{
         position: 'absolute',
-        left: -2904,
-        width: 2756,
+        left: -2464,
+        width: 2368,
         height: 1656,
-        top: 0,
+        top: -24,
       }}
       data-label='Mood Board'
     >

@@ -17,10 +17,11 @@ export default function Posts() {
 
   return (
     <div
+      className='my-class'
       style={{
         backgroundColor: 'var(--off-white)',
         height: '100%',
-        transition: '2s ease',
+        transition: 'all 0.5s ease-out',
       }}
     >
       <Title />

@@ -39,6 +39,7 @@ export default function PostForId() {
 
   return (
     <div
+      className='my-class'
       style={{
         width: '100%',
         height: '100%',
