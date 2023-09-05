@@ -5,7 +5,7 @@ export default function App() {
   return (
     <div
       style={{
-        backgroundColor: '#a5c0db',
+        backgroundColor: 'pink',
         width: '100%',
         height: '100%',
         contain: 'layout',
