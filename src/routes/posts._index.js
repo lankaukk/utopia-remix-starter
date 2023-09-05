@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from '@remix-run/react'
 import { json, useLoaderData } from 'react-router'
+import { Title } from '/src/title.js'
+import { CategoryFilters } from '/src/category-filters.js'
 
 export function loader() {
   return json({
@@ -13,7 +15,7 @@ export function loader() {
       },
       {
         id: 2,
-        name: 'McWay Falls',
+        name: 'McKay!!',
         src:
           'https://source.unsplash.com/07mSKrzKiRw/600x800',
       },
@@ -31,17 +33,8 @@ export default function Posts() {
         height: '100%',
       }}
     >
-      <span
-        style={{
-          fontSize: '30px',
-          fontWeight: 700,
-          fontStyle: 'normal',
-          marginBottom: 20,
-          display: 'inline-block',
-        }}
-      >
-        Beaches near you
-      </span>
+      <Title />
+      <CategoryFilters />
       {beaches.map(({ id, name, src }) => (
         <div
           style={{
