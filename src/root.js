@@ -5,13 +5,12 @@ export default function App() {
   return (
     <div
       style={{
-        backgroundColor: 'pink',
         width: '100%',
         height: '100%',
         contain: 'layout',
       }}
     >
-      <div
+      {/* <div
         style={{
           display: 'flex',
           alignItems: 'center',
@@ -25,7 +24,7 @@ export default function App() {
         }}
       >
         Root.js
-      </div>
+      </div> */}
       <Outlet />
     </div>
   )

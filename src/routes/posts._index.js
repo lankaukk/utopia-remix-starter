@@ -3,76 +3,82 @@ import { Link } from '@remix-run/react'
 import { json, useLoaderData } from 'react-router'
 import { Title } from '/src/title.js'
 import { CategoryFilters } from '/src/category-filters.js'
+import { activities } from '/public/data.js'
+import { Card } from '/src/card.js'
 
 export function loader() {
   return json({
-    beaches: [
-      {
-        id: 1,
-        name: 'La Digue',
-        src:
-          'https://source.unsplash.com/jPmurJKSL_0/600x800',
-      },
-      {
-        id: 2,
-        name: 'McKay!!',
-        src:
-          'https://source.unsplash.com/07mSKrzKiRw/600x800',
-      },
-    ],
+    activities: activities,
   })
 }
 
 export default function Posts() {
-  const { beaches } = useLoaderData()
+  const { activities } = useLoaderData()
   return (
     <div
       style={{
         padding: '10px',
-        backgroundColor: 'white',
+        backgroundColor: 'var(--off-white)',
         height: '100%',
       }}
     >
       <Title />
-      <CategoryFilters />
-      {beaches.map(({ id, name, src }) => (
-        <div
-          style={{
-            width: '100%',
-            height: 'max-content',
-            display: 'flex',
-            flexDirection: 'row',
-            gap: 26,
-            padding: '15px',
-            alignItems: 'center',
-            justifyContent: 'center',
-            borderRadius: 20,
-            border: '1px solid black',
-            marginBottom: '10px',
-          }}
-        >
-          <img
+      {/* <CategoryFilters /> */}
+      {activities.map(
+        ({
+          id,
+          name,
+          imageUrl,
+          rating,
+          date,
+          description,
+          categories,
+        }) => (
+          <div
             style={{
-              backgroundColor: '#aaaaaa33',
-              width: 77,
-              height: 75,
-              contain: 'layout',
-              borderRadius: 20,
-            }}
-            src={src}
-          />
-          <span
-            style={{
-              wordBreak: 'break-word',
-              width: 110,
-              height: 33,
-              contain: 'layout',
+              width: '100%',
+              background: 'var(--orange)',
+              overflowY: 'scroll',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 0,
+              flexWrap: 'nowrap',
+              padding: '0px 0px',
             }}
           >
-            <Link to={`${id}`}>{name}</Link>
-          </span>
-        </div>
-      ))}
+            {/* <img
+              style={{
+                backgroundColor: '#aaaaaa33',
+                width: 77,
+                height: 75,
+                contain: 'layout',
+                borderRadius: 20,
+              }}
+              src={imageUrl}
+            /> */}
+            <span
+              style={{
+                wordBreak: 'break-word',
+                width: 110,
+                height: 33,
+                contain: 'layout',
+              }}
+            >
+              <Link to={`${id}`}>
+                <Card
+                  id={id}
+                  name={name}
+                  imageUrl={imageUrl}
+                  rating={rating}
+                  date={date}
+                  description={description}
+                  categories={categories}
+                />
+              </Link>
+            </span>
+          </div>
+        ),
+      )}
     </div>
   )
 }

@@ -4,9 +4,21 @@ import {
   CategoryItem,
   ClearCategoriesButton,
 } from './category-item.js'
-import { categories } from '../public/data.js'
+// import { categories } from '../public/data.js'
 
 export var CategoryFilters = () => {
+  const categories = [
+    'rare',
+    'colorful',
+    'odd',
+    'trending',
+    'risky',
+    'snowy',
+    'mixological',
+    'aquatic',
+    'wonderous',
+    'tropical',
+  ]
   return (
     <div
       className='category-container'
