@@ -1,5 +1,6 @@
+import * as React from 'react'
 /** @jsx jsx */
-// import { jsx } from '@emotion/react'
+import { jsx } from '@emotion/react'
 import '../public/globals.css'
 import { useState, useCallback } from 'react'
 import { CardComplete } from '/src/card-complete.js'
@@ -21,7 +22,7 @@ export var Card = (props) => {
     <div
       data-label='Activity Card'
       onClick={toggleComplete}
-      style={{ overflow: 'hidden' }}
+      style={{ overflow: 'hidden', ...props.style }}
       css={{ '&:hover': { cursor: 'pointer' } }}
     >
       {!completed ? (

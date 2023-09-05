@@ -1,24 +1,12 @@
-// import * as React from 'react'
+import * as React from 'react'
 import '../public/globals.css'
 import {
   CategoryItem,
   ClearCategoriesButton,
 } from './category-item.js'
-// import { categories } from '../public/data.js'
+import { categories } from '/public/data.js'
 
-export var CategoryFilters = () => {
-  const categories = [
-    'rare',
-    'colorful',
-    'odd',
-    'trending',
-    'risky',
-    'snowy',
-    'mixological',
-    'aquatic',
-    'wonderous',
-    'tropical',
-  ]
+export var CategoryFilters = (props) => {
   return (
     <div
       className='category-container'
@@ -31,6 +19,7 @@ export var CategoryFilters = () => {
         width: '100%',
         height: '69.5px',
         overflowX: 'scroll',
+        ...props.style,
       }}
     >
       <ClearCategoriesButton

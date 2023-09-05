@@ -14,16 +14,16 @@ export function loader() {
 
 export default function Posts() {
   const { activities } = useLoaderData()
+
   return (
     <div
       style={{
-        padding: '10px',
         backgroundColor: 'var(--off-white)',
         height: '100%',
       }}
     >
       <Title />
-      {/* <CategoryFilters /> */}
+      <CategoryFilters />
       {activities.map(
         ({
           id,
@@ -37,7 +37,6 @@ export default function Posts() {
           <div
             style={{
               width: '100%',
-              background: 'var(--orange)',
               overflowY: 'scroll',
               display: 'flex',
               flexDirection: 'column',
@@ -46,36 +45,123 @@ export default function Posts() {
               padding: '0px 0px',
             }}
           >
-            {/* <img
-              style={{
-                backgroundColor: '#aaaaaa33',
-                width: 77,
-                height: 75,
-                contain: 'layout',
-                borderRadius: 20,
-              }}
-              src={imageUrl}
-            /> */}
-            <span
-              style={{
-                wordBreak: 'break-word',
-                width: 110,
-                height: 33,
-                contain: 'layout',
-              }}
-            >
-              <Link to={`${id}`}>
-                <Card
-                  id={id}
-                  name={name}
-                  imageUrl={imageUrl}
-                  rating={rating}
-                  date={date}
-                  description={description}
-                  categories={categories}
-                />
-              </Link>
-            </span>
+            <Link to={`${id}`}>
+              <div
+                style={{
+                  width: 834,
+                  height: 267,
+                  display: 'flex',
+                  flexDirection: 'row',
+                  overflow: 'hidden',
+                  borderTop:
+                    id % 2
+                      ? '3px solid var(--yellow)'
+                      : '3px solid var(--orange)',
+                }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-between',
+                    padding: 20,
+                    color: 'var(--purple)',
+                    backgroundColor:
+                      id % 2
+                        ? 'var(--yellow)'
+                        : 'var(--orange)',
+                    gap: 20,
+                    width: 679,
+                    height: '100%',
+                  }}
+                >
+                  <div
+                    style={{
+                      fontFamily: 'primary-basic',
+                      fontSize: '28px',
+                      textAlign: 'left',
+                      lineHeight: '1.2em',
+                    }}
+                  >
+                    {name}
+                  </div>
+                  <div
+                    style={{
+                      fontFamily: 'var(--secondary)',
+                      fontSize: '12px',
+                      textAlign: 'left',
+                    }}
+                  >
+                    {description}
+                    <br />
+                    <br />
+                    <div
+                      style={{
+                        display: 'flex',
+                        flexDirection: 'row',
+                        gap: 5,
+                      }}
+                    >
+                      {categories.map((category) => (
+                        <div
+                          style={{
+                            backgroundColor:
+                              'var(--purple)',
+                            color:
+                              id % 2
+                                ? 'var(--yellow)'
+                                : 'var(--orange)',
+                            padding: '2px 6px',
+                            borderRadius: 3,
+                          }}
+                        >
+                          {category}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style={{
+                    height: '100%',
+                    width: '100%',
+                    backgroundImage: `url(${imageUrl})`,
+                    backgroundSize: '100%',
+                    backgroundPosition: '50%',
+                    display: 'flex',
+                    alignItems: 'flex-end',
+                    justifyContent: 'flex-end',
+                  }}
+                >
+                  <div
+                    style={{
+                      height: 'min-content',
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                      padding: 20,
+                      fontFamily: 'var(--secondary)',
+                      fontSize: '20px',
+                      fontWeight: '600',
+                      color: 'var(--purple)',
+                      zIndex: 100,
+                      mixBlendMode: 'screen',
+                    }}
+                  >
+                    {date}
+                  </div>
+                </div>
+              </div>
+              {/* <Card
+                id={id}
+                name={name}
+                imageUrl={imageUrl}
+                rating={rating}
+                date={date}
+                description={description}
+                categories={categories}
+              /> */}
+            </Link>
           </div>
         ),
       )}

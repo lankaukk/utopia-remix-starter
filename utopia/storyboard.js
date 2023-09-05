@@ -11,10 +11,10 @@ export var storyboard = (
     <RemixScene
       style={{
         position: 'absolute',
-        width: 1600,
+        width: 834,
         height: 1656,
-        left: 0,
-        top: 0,
+        left: 4,
+        top: -22,
         overflow: 'hidden',
       }}
       data-label='Mood Board'
@@ -24,9 +24,10 @@ export var storyboard = (
     <Scene
       style={{
         position: 'absolute',
-        left: -1700,
-        width: 1600,
+        left: -2904,
+        width: 2756,
         height: 1656,
+        top: 0,
       }}
       data-label='Mood Board'
     >

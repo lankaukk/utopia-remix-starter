@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { Link } from '@remix-run/react'
 import { Title } from '/src/title.js'
 import { Card } from '/src/card.js'
