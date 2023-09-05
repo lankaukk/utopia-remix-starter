@@ -10,10 +10,8 @@ export default function App() {
         height: '100%',
         contain: 'layout',
       }}
-      data-uid='bf5'
     >
       <div
-        data-uid='d4d'
         style={{
           display: 'flex',
           alignItems: 'center',
@@ -28,7 +26,7 @@ export default function App() {
       >
         Root.js
       </div>
-      <Outlet data-uid='11c' />
+      <Outlet />
     </div>
   )
 }

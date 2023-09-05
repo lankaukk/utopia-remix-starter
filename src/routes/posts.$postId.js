@@ -49,7 +49,6 @@ export default function PostForId() {
         paddingLeft: 10,
         overflowY: 'scroll',
       }}
-      data-uid='a8e'
     >
       <img
         style={{
@@ -61,7 +60,6 @@ export default function PostForId() {
           borderRadius: 20,
         }}
         src={src}
-        data-uid='aag'
       />
       <div
         style={{
@@ -69,7 +67,6 @@ export default function PostForId() {
           width: '100%',
           height: 'max-content',
         }}
-        data-uid='3d0'
       >
         <span
           style={{
@@ -79,7 +76,6 @@ export default function PostForId() {
             fontSize: '26px',
             height: 30.5,
           }}
-          data-uid='4c5'
         >
           {name}
         </span>
@@ -90,7 +86,6 @@ export default function PostForId() {
           height: 19,
           contain: 'layout',
         }}
-        data-uid='6e3'
       >
         <span
           style={{
@@ -99,7 +94,6 @@ export default function PostForId() {
             height: 'max-content',
             contain: 'layout',
           }}
-          data-uid='1a3'
         >
           {description}
         </span>

@@ -30,7 +30,6 @@ export default function Posts() {
         backgroundColor: 'white',
         height: '100%',
       }}
-      data-uid='289'
     >
       <span
         style={{
@@ -40,7 +39,6 @@ export default function Posts() {
           marginBottom: 20,
           display: 'inline-block',
         }}
-        data-uid='8b1'
       >
         Beaches near you
       </span>
@@ -59,7 +57,6 @@ export default function Posts() {
             border: '1px solid black',
             marginBottom: '10px',
           }}
-          data-uid='1b9'
         >
           <img
             style={{
@@ -70,7 +67,6 @@ export default function Posts() {
               borderRadius: 20,
             }}
             src={src}
-            data-uid='824'
           />
           <span
             style={{
@@ -79,11 +75,8 @@ export default function Posts() {
               height: 33,
               contain: 'layout',
             }}
-            data-uid='97f'
           >
-            <Link to={`${id}`} data-uid='5bb'>
-              {name}
-            </Link>
+            <Link to={`${id}`}>{name}</Link>
           </span>
         </div>
       ))}

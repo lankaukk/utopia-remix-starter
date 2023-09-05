@@ -84,8 +84,8 @@ export var MoodBoard = () => {
         imageUrl={activities[2].imageUrl}
         style={{
           position: 'absolute',
-          left: 465,
-          top: 465,
+          left: 469,
+          top: 467,
         }}
       />
       <DecorativeLines
@@ -110,8 +110,8 @@ export var MoodBoard = () => {
           padding: 59,
           contain: 'layout',
           zIndex: 100,
-          top: 1062,
-          left: 114,
+          top: 920,
+          left: 98,
           position: 'absolute',
           alignItems: 'center',
           justifyContent: 'flex-start',
@@ -164,8 +164,8 @@ export var MoodBoard = () => {
           position: 'absolute',
           width: 540,
           height: 540,
-          top: 1046,
-          left: 577,
+          top: 986,
+          left: 775,
         }}
       />
       <Mixologist

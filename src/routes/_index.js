@@ -18,7 +18,6 @@ export default function Index() {
           fontStyle: 'normal',
           color: 'rgb(0, 0, 0, 1)',
         }}
-        data-uid='ttt'
       >
         Beaches
       </span>
@@ -33,7 +32,6 @@ export default function Index() {
           justifyContent: 'center',
           borderRadius: 26,
         }}
-        data-uid='419'
       >
         <Link
           style={{

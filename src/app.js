@@ -9,7 +9,6 @@ export var App = () => {
         width: '100%',
         height: '100%',
         background: 'white',
-
         justifyContent: 'center',
         alignItems: 'center',
       }}
@@ -18,7 +17,7 @@ export var App = () => {
         src='https://github.com/concrete-utopia/utopia/blob/master/editor/resources/editor/pyramid_fullsize@2x.jpg?raw=true'
         alt='Utopia logo'
         style={{ height: '40%' }}
-      ></img>
+      />
     </FlexCol>
   )
 }

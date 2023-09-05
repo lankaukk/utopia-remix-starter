@@ -11,7 +11,6 @@ export var storyboard = (
     <RemixScene
       style={{
         position: 'absolute',
-
         width: 1600,
         height: 1656,
       }}
