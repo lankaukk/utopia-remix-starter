@@ -83,7 +83,7 @@ export default function Index() {
       </span>
       <div
         style={{
-          backgroundColor: '#e6e6e6',
+          backgroundColor: 'lime',
           width: '100%',
           height: 79,
           display: 'flex',
