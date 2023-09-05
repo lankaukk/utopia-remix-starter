@@ -20,6 +20,7 @@ export default function Posts() {
       style={{
         backgroundColor: 'var(--off-white)',
         height: '100%',
+        transition: '2s ease',
       }}
     >
       <Title />
