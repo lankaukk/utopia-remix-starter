@@ -1,3 +1,4 @@
+// import * as React from 'react'
 import {
   DecorativeLines,
   Checkerboard,
@@ -8,7 +9,6 @@ import { Mixologist } from '/src/stickers.js'
 import { Tropicologist } from '/src/stickers.js'
 import { AquaMan } from '/src/stickers.js'
 import { activities } from '/public/data.js'
-import * as React from 'react'
 import { Title } from '/src/title.js'
 
 export var MoodBoard = () => {
@@ -33,22 +33,22 @@ export var MoodBoard = () => {
           zIndex: 100,
         }}
       />
-      {true ? (
-        <span
-          style={{
-            position: 'absolute',
-            wordBreak: 'break-word',
-            fontSize: '44px',
-            height: 42,
-            color: 'var(--yellow)',
-            left: 643,
-            top: 311,
-            width: 872,
-          }}
-        >
-          {activities[2].name}
-        </span>
-      ) : null}
+
+      <span
+        style={{
+          position: 'absolute',
+          wordBreak: 'break-word',
+          fontSize: '44px',
+          height: 42,
+          color: 'var(--yellow)',
+          left: 643,
+          top: 311,
+          width: 872,
+        }}
+      >
+        {activities[2].name}
+      </span>
+
       <Checkerboard
         style={{
           position: 'absolute',
