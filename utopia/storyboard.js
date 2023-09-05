@@ -10,19 +10,8 @@ export var storyboard = (
   <Storyboard>
     <RemixScene
       style={{
-        width: 386,
-        height: 543,
         position: 'absolute',
-        left: 467,
-        top: 3,
-        background: 'lime',
-      }}
-    />
-    <RemixScene
-      style={{
-        position: 'absolute',
-        left: -1288,
-        top: 4,
+
         width: 1600,
         height: 1656,
       }}
@@ -33,8 +22,7 @@ export var storyboard = (
     <Scene
       style={{
         position: 'absolute',
-        left: -3004,
-        top: 4,
+        left: -1700,
         width: 1600,
         height: 1656,
       }}
