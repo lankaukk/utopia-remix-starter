@@ -6,6 +6,8 @@ import { CategoryFilters } from '/src/category-filters.js'
 import { activities } from '/public/data.js'
 import { Card } from '/src/card.js'
 
+const wait = (ms) => new Promise((r) => setTimeout(r, ms))
+
 export function loader() {
   return fetch('http://localhost:4000/graphql', {
     method: 'POST',
@@ -19,7 +21,9 @@ export function loader() {
     }),
   })
     .then((r) => r.json())
-    .then((data) => json({ hello: data }))
+    .then((data) =>
+      wait(1000).then(() => json({ hello: data })),
+    )
 }
 
 export default function Posts() {
