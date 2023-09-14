@@ -19,7 +19,19 @@ export var storyboard = (
         overflow: 'hidden',
       }}
       data-label='Mood Board'
-    ></RemixScene>
+    />
+    <RemixScene
+      className='my-class'
+      style={{
+        position: 'absolute',
+        width: 834,
+        height: 1328,
+        left: 916,
+        top: -24,
+        overflow: 'hidden',
+      }}
+      data-label='Mood Board'
+    />
     <Scene
       style={{
         position: 'absolute',
