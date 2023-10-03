@@ -18,7 +18,7 @@ export var storyboard = (
         top: -24,
         overflow: 'hidden',
       }}
-      data-label='Mood Board'
+      data-label='App'
     />
     <RemixScene
       className='my-class'
@@ -30,7 +30,7 @@ export var storyboard = (
         top: -24,
         overflow: 'hidden',
       }}
-      data-label='Mood Board'
+      data-label='App'
     />
     <Scene
       style={{
