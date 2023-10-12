@@ -5,6 +5,7 @@ import { Title } from '/src/title.js'
 import { CategoryFilters } from '/src/category-filters.js'
 import { activities } from '/public/data.js'
 import { Card } from '/src/card.js'
+import { Details } from '/src/details.js'
 
 export function loader() {
   return json({
@@ -97,30 +98,10 @@ export default function Posts() {
                     {description}
                     <br />
                     <br />
-                    <div
-                      style={{
-                        display: 'flex',
-                        flexDirection: 'row',
-                        gap: 5,
-                      }}
-                    >
-                      {categories.map((category) => (
-                        <div
-                          style={{
-                            backgroundColor:
-                              'var(--purple)',
-                            color:
-                              id % 2
-                                ? 'var(--yellow)'
-                                : 'var(--orange)',
-                            padding: '2px 6px',
-                            borderRadius: 3,
-                          }}
-                        >
-                          {category}
-                        </div>
-                      ))}
-                    </div>
+                    <Details
+                      categories={categories}
+                      id={id}
+                    />
                   </div>
                 </div>
                 <div

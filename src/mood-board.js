@@ -50,27 +50,26 @@ export var MoodBoard = () => {
           width: 404,
           left: 203,
           top: 260,
-          borderRadius: 88,
-          overflow: 'hidden',
         }}
         color1='var(--purple)'
         color2='var(--orange)'
-      />
-      <Tropicologist
-        style={{
-          position: 'absolute',
-          left: 203,
-          top: 811,
-          width: 100,
-          height: 100,
-          zIndex: 100,
-        }}
-      />
+      >
+        <Tropicologist
+          style={{
+            position: 'absolute',
+            left: -1,
+            top: 287,
+            width: 100,
+            height: 100,
+            zIndex: 100,
+          }}
+        />
+      </Checkerboard>
       <AquaMan
         style={{
           position: 'absolute',
-          left: 354,
-          top: 772,
+          left: 34,
+          top: 678,
           width: 100,
           height: 100,
           zIndex: 100,
@@ -177,7 +176,7 @@ export var MoodBoard = () => {
         style={{
           position: 'absolute',
           left: 1574,
-          top: 972,
+          top: 778,
           width: 100,
           height: 100,
         }}
@@ -185,8 +184,8 @@ export var MoodBoard = () => {
       <Wonderer
         style={{
           position: 'absolute',
-          left: 1704,
-          top: 872,
+          left: 1850,
+          top: 873,
           width: 100,
           height: 100,
         }}
