@@ -59,8 +59,8 @@ export var MoodBoard = () => {
       <Tropicologist
         style={{
           position: 'absolute',
-          left: 325,
-          top: 741,
+          left: 203,
+          top: 811,
           width: 100,
           height: 100,
           zIndex: 100,
@@ -69,8 +69,8 @@ export var MoodBoard = () => {
       <AquaMan
         style={{
           position: 'absolute',
-          left: 48,
-          top: 640,
+          left: 354,
+          top: 772,
           width: 100,
           height: 100,
           zIndex: 100,
