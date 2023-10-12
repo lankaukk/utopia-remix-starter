@@ -50,6 +50,8 @@ export var MoodBoard = () => {
           width: 404,
           left: 203,
           top: 260,
+          borderRadius: 88,
+          overflow: 'hidden',
         }}
         color1='var(--purple)'
         color2='var(--orange)'
@@ -67,8 +69,8 @@ export var MoodBoard = () => {
       <AquaMan
         style={{
           position: 'absolute',
-          left: 152,
-          top: 522,
+          left: 48,
+          top: 640,
           width: 100,
           height: 100,
           zIndex: 100,
