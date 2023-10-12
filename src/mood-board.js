@@ -115,14 +115,15 @@ export var MoodBoard = () => {
           border: '0px solid #DD4A76FF',
         }}
       >
-        <Wonderer
+        <img
+          data-aspect-ratio-locked
+          src={activities[3].imageUrl}
           style={{
-            width: 122,
-            height: 122,
-            transform: 'rotate(-14deg)',
-            zIndex: 100,
+            width: 240,
+            height: 180,
             contain: 'layout',
           }}
+          alt='cool activity'
         />
         <span
           style={{
@@ -140,15 +141,14 @@ export var MoodBoard = () => {
         >
           {activities[3].description}
         </span>
-        <img
-          data-aspect-ratio-locked
-          src={activities[3].imageUrl}
+        <Wonderer
           style={{
-            width: 240,
-            height: 180,
+            width: 122,
+            height: 122,
+            transform: 'rotate(-14deg)',
+            zIndex: 100,
             contain: 'layout',
           }}
-          alt='cool activity'
         />
       </div>
       <img
@@ -196,7 +196,7 @@ export var MoodBoard = () => {
           wordBreak: 'break-word',
           fontSize: '44px',
           height: 42,
-          color: 'var(--yellow)',
+          color: 'green',
           left: 753,
           top: 285,
           width: 872,
