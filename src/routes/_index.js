@@ -52,7 +52,7 @@ export default function Index() {
           }}
           to='/posts'
         >
-          Things I soooo want to do
+          Things I really want to do
         </Link>
       </div>
     </div>
