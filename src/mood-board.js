@@ -48,8 +48,8 @@ export var MoodBoard = () => {
           position: 'absolute',
           height: 479,
           width: 404,
-          left: 131,
-          top: 298,
+          left: 23,
+          top: 20,
         }}
         color1='var(--purple)'
         color2='var(--orange)'
@@ -105,8 +105,8 @@ export var MoodBoard = () => {
           padding: 59,
           contain: 'layout',
           zIndex: 100,
-          top: 961,
-          left: 114,
+          top: 920,
+          left: 98,
           position: 'absolute',
           alignItems: 'center',
           justifyContent: 'flex-start',
