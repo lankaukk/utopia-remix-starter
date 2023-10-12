@@ -48,8 +48,8 @@ export var MoodBoard = () => {
           position: 'absolute',
           height: 479,
           width: 404,
-          left: 203,
-          top: 260,
+          left: 131,
+          top: 298,
         }}
         color1='var(--purple)'
         color2='var(--orange)'
@@ -68,8 +68,8 @@ export var MoodBoard = () => {
       <AquaMan
         style={{
           position: 'absolute',
-          left: 34,
-          top: 678,
+          left: 202,
+          top: 740,
           width: 100,
           height: 100,
           zIndex: 100,
