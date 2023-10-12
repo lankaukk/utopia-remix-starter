@@ -115,6 +115,15 @@ export var MoodBoard = () => {
           border: '0px solid #DD4A76FF',
         }}
       >
+        <Wonderer
+          style={{
+            width: 122,
+            height: 122,
+            transform: 'rotate(-14deg)',
+            zIndex: 100,
+            contain: 'layout',
+          }}
+        />
         <span
           style={{
             wordBreak: 'break-word',
@@ -140,15 +149,6 @@ export var MoodBoard = () => {
             contain: 'layout',
           }}
           alt='cool activity'
-        />
-        <Wonderer
-          style={{
-            width: 122,
-            height: 122,
-            transform: 'rotate(-14deg)',
-            zIndex: 100,
-            contain: 'layout',
-          }}
         />
       </div>
       <img
