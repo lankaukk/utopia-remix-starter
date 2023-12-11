@@ -48,28 +48,27 @@ export var MoodBoard = () => {
           position: 'absolute',
           height: 479,
           width: 404,
-          left: 101,
-          top: 348,
+          left: 203,
+          top: 260,
         }}
         color1='var(--purple)'
         color2='var(--orange)'
-      >
-        <Tropicologist
-          style={{
-            position: 'absolute',
-            left: -1,
-            top: 287,
-            width: 100,
-            height: 100,
-            zIndex: 100,
-          }}
-        />
-      </Checkerboard>
+      />
+      <Tropicologist
+        style={{
+          position: 'absolute',
+          left: 325,
+          top: 741,
+          width: 100,
+          height: 100,
+          zIndex: 100,
+        }}
+      />
       <AquaMan
         style={{
           position: 'absolute',
-          left: 202,
-          top: 740,
+          left: 152,
+          top: 522,
           width: 100,
           height: 100,
           zIndex: 100,
@@ -115,15 +114,6 @@ export var MoodBoard = () => {
           border: '0px solid #DD4A76FF',
         }}
       >
-        <Wonderer
-          style={{
-            width: 122,
-            height: 122,
-            transform: 'rotate(-14deg)',
-            zIndex: 100,
-            contain: 'layout',
-          }}
-        />
         <span
           style={{
             wordBreak: 'break-word',
@@ -149,6 +139,15 @@ export var MoodBoard = () => {
             contain: 'layout',
           }}
           alt='cool activity'
+        />
+        <Wonderer
+          style={{
+            width: 122,
+            height: 122,
+            transform: 'rotate(-14deg)',
+            zIndex: 100,
+            contain: 'layout',
+          }}
         />
       </div>
       <img
@@ -176,7 +175,7 @@ export var MoodBoard = () => {
         style={{
           position: 'absolute',
           left: 1574,
-          top: 778,
+          top: 972,
           width: 100,
           height: 100,
         }}
@@ -184,8 +183,8 @@ export var MoodBoard = () => {
       <Wonderer
         style={{
           position: 'absolute',
-          left: 1850,
-          top: 873,
+          left: 1704,
+          top: 872,
           width: 100,
           height: 100,
         }}
@@ -196,7 +195,7 @@ export var MoodBoard = () => {
           wordBreak: 'break-word',
           fontSize: '44px',
           height: 42,
-          color: 'blue',
+          color: 'var(--yellow)',
           left: 753,
           top: 285,
           width: 872,
@@ -207,7 +206,7 @@ export var MoodBoard = () => {
       <CategoryFilters
         style={{
           position: 'absolute',
-          top: 326,
+          top: 330,
           left: 84,
           width: 1540,
           height: 172,
